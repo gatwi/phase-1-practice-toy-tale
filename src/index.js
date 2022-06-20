@@ -13,3 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+getToys().then(toys => {
+  toys.forEach(toy => {
+    renderToys(toy)
+  })
+})
